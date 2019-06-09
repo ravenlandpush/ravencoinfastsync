@@ -12,7 +12,7 @@ downloadstring=$(sha256sum ravencoinOS-bootstrap.tar | awk '{print $1}');
 #downloadstring="36209053c1b1761d9f9e6c5ac64f74d8ffe2bdc98364387cc2b4218b80a12037";
 if [ "$verifystring" == "$downloadstring" ]
 then
-echo "RavencoinOS bootstrap safe";
+echo "RavencoinOS bootstrap verified at source";
 else
-echo "RavencoinOS bootstrap not safe";
+echo "RavencoinOS bootstrap not safe DO NOT USE!";
 fi
